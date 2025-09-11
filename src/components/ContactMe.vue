@@ -14,7 +14,8 @@ import Heading from "./Heading.vue";
     fill in the form below 👇
   </p>
 
-  <form name="contact" method="POST" netlify>
+  <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact" />
     <div
       class="mt-7 p-10 border border-secondary/5 rounded bg-secondary/5 flex flex-col justify-center items-center gap-3"
     >
