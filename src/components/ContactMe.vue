@@ -43,7 +43,7 @@ const handleSubmit = async () => {
     fill in the form below 👇
   </p>
 
-  <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+  <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
     <input type="hidden" name="form-name" value="contact" />
     <div
       class="mt-7 p-10 border border-secondary/5 rounded bg-secondary/5 flex flex-col justify-center items-center gap-3">
