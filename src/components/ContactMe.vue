@@ -32,10 +32,14 @@ const handleSubmit = async () => {
 
 <template>
   <!-- Toast -->
-  <div v-if="success"
-    class="fixed top-0 left-1/2 -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded shadow z-50">
-    Message sent successfully!
+  <Teleport to="body">
+  <div
+    v-if="success"
+    class="fixed top-4 left-1/2 -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded shadow z-50"
+  >
+    Thank you for your message!
   </div>
+</Teleport>
 
   <Heading> Get in touch! </Heading>
   <p class="text-black/70 mt-5 text-center text-xs md:text-sm">
