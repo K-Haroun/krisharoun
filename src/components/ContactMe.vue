@@ -1,6 +1,8 @@
 <script setup>
 import { Send } from "lucide-vue-next";
 import Heading from "./Heading.vue";
+
+
 </script>
 
 <template>
@@ -20,11 +22,13 @@ import Heading from "./Heading.vue";
         type="email"
         placeholder="Your email"
         class="p-4 bg-tertiary/50 border border-secondary rounded-md w-full md:w-2/3 h-10"
+        required
       />
       <textarea
         type="text"
         placeholder="Your message"
         class="w-full md:w-2/3 h-50 p-4 border border-secondary rounded-md resize-none bg-tertiary/50"
+        required
       />
       <button
         type="submit"
