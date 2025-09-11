@@ -9,7 +9,7 @@ import Heading from "@/components/Heading.vue";
 <template>
   <div>
     <Heading>
-      Some of my work
+      Projects
     </Heading>
 
     <div class="mx-auto pt-10 pb-10 md:pb-20">
