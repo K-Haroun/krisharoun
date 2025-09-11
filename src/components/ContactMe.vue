@@ -12,7 +12,7 @@ import Heading from "./Heading.vue";
     fill in the form below 👇
   </p>
 
-  <form action="">
+  <form name="contact" method="POST" netlify>
     <div
       class="mt-7 p-10 border border-secondary/5 rounded bg-secondary/5 flex flex-col justify-center items-center gap-3"
     >
@@ -22,7 +22,7 @@ import Heading from "./Heading.vue";
         class="p-4 bg-tertiary/50 border border-secondary rounded-md w-full md:w-2/3 h-10"
       />
       <textarea
-        type="email"
+        type="text"
         placeholder="Your message"
         class="w-full md:w-2/3 h-50 p-4 border border-secondary rounded-md resize-none bg-tertiary/50"
       />
