@@ -9,19 +9,18 @@ onMounted(() => {
 
   setTimeout(() => {
     show2.value = true;
-  }, 700)
+  }, 700);
 });
 </script>
 
 <template>
-  <div class="flex justify-center items-center gap-10 md:gap-50">
-    <Transition name="slide1">
-      <img v-if="show1" src="@/assets/images/me.png" alt="me.png" class="h-50 md:h-150 w-auto" />
-    </Transition>
+  <div class="flex justify-center items-center gap-10 md:gap-10">
     <div class="w-30 md:w-100">
       <Transition name="slide2">
         <div v-if="show2" class="flex flex-col justify-start gap-5">
-          <h2 class="text-xl md:text-4xl text-secondary font-bold text-shadow-md">Hey, I'm Kris</h2>
+          <h2 class="text-xl md:text-4xl text-secondary font-bold text-shadow-md">
+            Hey, I'm Kris
+          </h2>
           <p class="text-xs md:text-lg">
             I am a passionate web & software developer. My goal is to make a change in the
             world through the great power of coding!
@@ -29,6 +28,15 @@ onMounted(() => {
         </div>
       </Transition>
     </div>
+
+    <Transition name="slide1">
+      <img
+        v-if="show1"
+        src="@/assets/images/me.png"
+        alt="me.png"
+        class="h-50 md:h-100 w-auto"
+      />
+    </Transition>
   </div>
 </template>
 
