@@ -2,7 +2,7 @@
 import ProjectCard from "@/components/ProjectCard.vue";
 import gplogistics from "@/assets/images/gplogistics.png";
 import gplcustoms from "@/assets/images/gplcustoms.png";
-import dnd from "@/assets/images/dnd.png";
+import fpllegends from "@/assets/images/fpllegends.png";
 import Heading from "@/components/Heading.vue";
 </script>
 
